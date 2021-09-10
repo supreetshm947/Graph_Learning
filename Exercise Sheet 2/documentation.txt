@@ -1,0 +1,67 @@
+## Exercise Sheet 2
+
+Keras implementation of node and graph classification using Graph Convolutional Networks.
+
+### Run
+
+```
+  cd Exercise Sheet 2
+  python main.py
+```
+
+
+### Structure of repository: 
+
+    - Exercise Sheet 1
+
+    - Exercise Sheet 2/
+```
+  /Model Architecture folder (Visualisation of different model architectures)
+  /data_utils file
+  /gcn.py (Layer for Graph Conv.(q1)) 
+  /graph_classification.py (q3 + q4)  
+  /node_classification (q2) 
+  /utils.py 
+  /main.py (for main execution and results) 
+  /datasets folder
+```
+
+### Requirements 
+
+
+- Python (>3)
+- Tensorflow (2.5.0rc3)
+- Keras (2.4.3)
+- Pydot (1.4.2)
+
+
+### Experimental Setup
+
+- Node Classification 
+
+  - Epochs : 600 (Cora) | 1000 (Citeseer)
+  - Optimizer : Adam
+  - Learning Rate : 0.0001 
+  - Weight initialization : Glorot Normal
+
+### Results 
+
+- Node Classification:
+
+| CORA | CITESEER |
+| ------ | ------ |
+| **train:** 0.88±0.004 | 0.87±0.002 |
+| **test:** 0.52±0.007 | 0.56±0.006 |
+
+
+### Reference 
+```
+ @inproceedings{kipf2017semi,
+      title={Semi-Supervised Classification with Graph Convolutional Networks},
+      author={Kipf, Thomas N. and Welling, Max},
+      booktitle={International Conference on Learning Representations (ICLR)},
+      year={2017}
+  }_
+```
+
+

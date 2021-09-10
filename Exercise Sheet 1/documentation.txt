@@ -1,0 +1,39 @@
+1) Enter file "exercise-1-Abheek-Alex-Supreet": ~In the Notebook "Exercise Sheet 1.ipynb" there are the four exercises in order. (header for each one of them)
+
+~The files "datasets", "data_utils.py" and "requirements.txt" are the files which were already uploaded before.
+
+2)Our code, is just in a Jupyter Notebook, so to get the results, run the code in Jupyter as it is. ~packages that were used, are all together in the first line of our code in Jupyter Notebook.
+
+3)For accuracy and standard deviation:
+
+      ~Graphlet Kernel:  #NCI1:  mean_accuracy=0.62 and standard_deviation=0.04
+                                                 So we get 62% (in gen WL paper we have 66%)
+
+                                    #DD:   mean_accuracy=0.23 and standard_deviation=0.06
+                                               So we get 23% (in gen WL paper we have 78.59%, bad one)
+
+
+                                    #ENZYMES  mean_accuracy=0.20 and standard_deviation=0.05
+                                                        So we get 20% (in gen WL paper we have 32.7%)
+
+
+
+       ~Closed Walk Kernel:  #NCI1:  mean_accuracy=0.65 and standard_deviation=0.03
+                                                        So we get 65% (in gen WL paper we have 64.34%, almost same)
+
+                                           #DD:  mean_accuracy=0.23 and standard_deviation=0.04
+                                                     So we get 23% (in gen WL paper we have 71.70%, bad one)
+
+                                           #ENZYMES:  mean_accuracy=0.64 and standard_deviation=0.03
+                                                                So we get 64% (in gen WL paper we have 21.68%)
+
+
+
+       ~WL Kernel:  #NCI1:  mean_accuracy=0.66 and standard_deviation=0.03
+                                         So we get 66% (in gen WL paper we have 88.55%)
+
+                             #DD:  no results due to some error in WL Kernel
+
+                             #ENZYMES:  mean_accuracy=0.66 and standard_deviation=0.03
+                                         So we get 66% (in gen WL paper we have 59.05%)
+***For some datasets, better results were obtained from colab, that we couldnt capture them on Jupyter. So see the corresponding screenshots in exercise-1-Abeek-Alex-Supreet\screenshots.

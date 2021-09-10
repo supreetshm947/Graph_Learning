@@ -1,0 +1,88 @@
+# Graph_Learning_2
+
+## Exercise Sheet 3 [^1]
+
+Keras implementation for learning node_embeddings of a graph to perform node_classification and link_prediction tasks.
+
+### Run
+
+```
+  cd Exercise Sheet 3
+  python main.py
+```
+
+
+### Structure of repository:
+
+    - Exercise Sheet 1
+
+    - Exercise Sheet 2
+
+    - Exercise Sheet 3/
+```
+  /datasets folder
+  /biased_random_walk.py
+  /data_utils.py
+  /link_prediction.py
+  /node_classification.py
+  /main.py (for main execution and results)
+  /node2vec.py
+  /Word2Vec.py
+```
+
+### Requirements
+
+
+- Python (>3)
+- Tensorflow (2.5.0rc3)
+- Keras (2.4.3)
+- Gensim (Word2Vec)[^2]
+
+### Results
+
+- Node2Vec
+[Insuffcient performance]
+
+
+- Node Classification:
+
+  | Dataset | Mean Accuracy ± Standard Deviation |
+  | ------ | ------ |
+  | **CORA:** |  |
+  |(p = 1,  q = 1)| 0.229 ± 0.015 |
+  |(p = 0.1, q = 1)| 0.227 ± 0.019 |
+  |(p = 1,  q = 0.1)| 0.223 ± 0.024 |
+  | **CITESEER:** |  |
+  |(p = 1,  q = 1)| 0.208 ± 0.009 |
+  |(p = 0.1, q = 1)| 0.218 ± 0.027  |
+  |(p = 1,  q = 0.1)| 0.196 ± 0.019  |
+
+
+- Link Prediction :
+
+  | Dataset | Mean Accuracy ± Std. Dev  | Mean ROC-AUC ± Std. Dev |
+  | ------ | ------ | ------ |
+  | **Train**: |  |  |
+  | FACEBOOK  | 0.562 ± 0.001 | 0.558 ± 0.0 |
+  | PPI | 0.578 ± 0.002 | 0.57 ± 0.0 |
+  | **Eval**: |  |  |
+  | FACEBOOK  | 0.5366 ± 0.002 | 0.553 ± 0.0019 |
+  | PPI | 0.546 ± 0.003 | 0.56 ± 0.004 |
+
+
+### Reference
+```
+ @inproceedings{node2vec-kdd2016,
+    author = {Grover, Aditya and Leskovec, Jure},
+    title = {node2vec: Scalable Feature Learning for Networks},
+    booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+    year = {2016}
+  }
+```
+
+
+[^1]: Documentation for Exercise Sheet 1 -> Graph_Learning_2/Exercise Sheet 1/documentation.txt \
+    Documentation for Exercise Sheet 2 -> Graph_Learning_2/Exercise Sheet 2/documentation.txt
+
+
+[^2]: Due to insufficient accuracies of node embeddings in Node2Vec.py, we used node embeddings from Gensim Word2vec in node_classification and link_prediction tasks
